@@ -97,7 +97,7 @@ The Power BI dashboard provides an overview of:
 - Academic Level
 - Institutional Policy
 
-![AI Student Impact Dashboard](./dashboard/dashboard.png)
+![AI Student Impact Dashboard](./dashboard/AI%20Student%20Impact%20Dashboard.jpg)
 
 ---
 

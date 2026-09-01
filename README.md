@@ -132,19 +132,3 @@ The dashboard provides an interactive view of:
 - **Power BI** — Dashboard Development
 
 ---
-
-## Project Structure
-
-```text
-ai-student-performance-analysis/
-│
-├── README.md
-│
-├── analysis/
-│   └── BNSP_AI_Student_Impact_Analysis.ipynb
-│
-├── dashboard/
-│   └── dashboard.png
-│
-└── presentation/
-    └── presentation.pdf

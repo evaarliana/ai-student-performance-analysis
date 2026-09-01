@@ -4,42 +4,24 @@
 
 This project analyzes the relationship between Generative AI usage, academic performance, and student well-being.
 
-The original dataset contains **50,000 student records** and 16 variables covering academic performance, AI usage patterns, burnout risk, anxiety levels, skill retention, and institutional factors. The analysis uses **49,994 records** to generate data-driven insights for educational decision-making.
+Using the AI Student Impact Dataset, the analysis explores academic performance, AI usage patterns, burnout risk, anxiety levels, and skill retention to generate data-driven insights for educational decision-making.
+
+The original dataset contains **50,000 student records**, with **49,994 records** retained for the final analysis after data cleaning and validation.
 
 ---
 
-## Business Questions
+## Business Problem
 
-- Is Generative AI usage associated with changes in academic performance?
-- How is AI usage duration related to students' academic performance?
-- How do institutional policies relate to student well-being?
-- Does AI usage differ across academic levels?
-- How does AI usage intensity relate to skill retention?
+How does Generative AI usage relate to students' academic performance and well-being, and what insights can support responsible AI adoption in education?
 
 ---
 
-## Data & Scope
+## Objectives
 
-### Dataset
-
-**AI Student Impact Dataset**
-
-- Original records: **50,000 students**
-- Analytical records: **49,994 students**
-- Variables: **16**
-- Unit of analysis: **Student**
-
-### Key Analytical Dimensions
-
-- Academic Performance
-- Weekly AI Usage
-- AI User Segment
-- Burnout Risk
-- Anxiety Level
-- Skill Retention
-- Institutional Policy
-- Academic Level
-- Major Category
+- Analyze the relationship between Generative AI usage and academic performance.
+- Identify patterns between AI usage and burnout, anxiety, and skill retention.
+- Compare AI usage across academic levels and institutional policies.
+- Generate data-driven recommendations to support educational decision-making.
 
 ---
 
@@ -47,17 +29,15 @@ The original dataset contains **50,000 student records** and 16 variables coveri
 
 The analysis follows an end-to-end workflow:
 
-**Data Understanding → Data Quality Assessment → Data Cleaning & Validation → Exploratory Data Analysis → Statistical Analysis → Dashboard Development → Business Recommendations**
+**Data Understanding → Data Quality Assessment → Data Cleaning → Exploratory Data Analysis → Statistical Analysis → Dashboard Development → Business Recommendations**
 
-### 1. Data Understanding
+### Data Preparation
 
-Identified the key variables required to evaluate academic performance, AI usage, student well-being, and institutional factors.
+- Validated data types, missing values, duplicates, and invalid values.
+- Cleaned inconsistent and invalid records.
+- Reduced the dataset from 50,000 to 49,994 records for analysis.
 
-### 2. Data Quality Assessment
-
-Validated data completeness, duplication, data types, categorical values, and numerical ranges before analysis.
-
-### 3. Exploratory & Statistical Analysis
+### Exploratory & Statistical Analysis
 
 Analyzed:
 
@@ -65,70 +45,81 @@ Analyzed:
 - Weekly AI Hours vs. Post Semester GPA
 - Burnout Risk by Institutional Policy
 - Anxiety Level by Institutional Policy
-- Weekly AI Hours by Academic Level
+- Weekly AI Usage by Academic Level
 - Skill Retention by AI User Segment
-
-### 4. Dashboard Development
-
-Developed an interactive Power BI dashboard to monitor academic performance, AI usage, burnout risk, anxiety, and skill retention.
 
 ---
 
-## Key Insights
+## Key Findings
 
 ### 1. Academic Performance Improved
 
-Average GPA increased from **3.15 to 3.35**, representing a **6.35% increase** after AI adoption. The increase was observed consistently across major categories.
+Average GPA increased from **3.15 to 3.35**, representing a **6.35% increase**. The improvement was observed consistently across major categories.
 
-### 2. AI Usage Has Almost No Linear Relationship with GPA
+### 2. AI Usage Duration Has Almost No Linear Relationship with GPA
 
-Weekly AI Hours showed an almost negligible relationship with Post Semester GPA, with a **Pearson correlation of -0.02**.
-
-This suggests that the duration of AI usage alone is not a strong indicator of academic performance.
+Weekly AI Hours showed an almost negligible linear relationship with Post Semester GPA, with a **Pearson correlation of -0.02**.
 
 ### 3. Institutional Policy Is Associated with Anxiety Levels
 
 Students under a **Strict Ban** policy recorded the highest average Anxiety Level at **4.89**, compared with **4.12** for both Allowed and Encouraged policies.
 
-### 4. AI Usage Is Relatively Consistent Across Academic Levels
+### 4. AI Usage Is Consistent Across Academic Levels
 
-Average AI usage remained around **8.4 hours per week** across Freshman to Graduate levels, with only small differences between academic levels.
+Average AI usage remained relatively consistent across academic levels, ranging between **8.38–8.46 hours per week**.
 
 ### 5. Moderate AI Users Show the Highest Skill Retention
 
-**Moderate Users** recorded the highest average Skill Retention Score at **77**, compared with **76** for Light Users and **73** for Heavy Users.
+**Moderate Users** recorded the highest average Skill Retention Score at **77**, followed by Light Users at **76** and Heavy Users at **73**.
 
 ---
 
 ## Business Recommendations
 
-- Encourage balanced and responsible AI usage rather than relying on blanket restrictions.
-- Improve AI literacy through training on prompt engineering, information evaluation, and ethical AI usage.
-- Combine AI-assisted learning with active learning, analysis, discussion, and problem-solving activities.
-- Monitor student well-being indicators alongside academic performance when evaluating AI adoption.
+- Implement balanced and responsible AI usage guidelines rather than fully restricting AI use.
+- Improve AI literacy through training on prompt engineering, information evaluation, and AI ethics.
+- Combine AI-assisted learning with analysis, discussion, and problem-solving activities.
+- Monitor student well-being indicators such as burnout and anxiety.
+- Use the dashboard to continuously monitor academic performance, AI usage, and student well-being.
 
 ---
 
-## Dashboard Preview
+## Dashboard
 
-![AI Student Impact Dashboard](./dashboard/dashboard.png)
+The Power BI dashboard provides an overview of:
 
-The dashboard provides an interactive view of:
-
-- Academic performance
-- Weekly AI usage
-- Burnout risk
-- Anxiety level
-- Skill retention
+- Academic Performance
+- Weekly AI Usage
+- Burnout Risk
+- Anxiety Level
+- Skill Retention
 - Major Category
 - Academic Level
 - Institutional Policy
+
+![AI Student Impact Dashboard](./dashboard/dashboard.png)
 
 ---
 
 ## Tools
 
-- **Python** — Data Cleaning, Exploratory Data Analysis, and Statistical Analysis
-- **Power BI** — Dashboard Development
+- Python — Data Cleaning, EDA & Statistical Analysis
+- Power BI — Dashboard Development
 
 ---
+
+## Project Files
+
+| File | Description |
+|---|---|
+| `analysis/` | Python analysis and data preparation |
+| `dashboard/` | Power BI dashboard and preview |
+| `presentation/` | Project presentation and analysis documentation |
+
+---
+
+## Disclaimer
+
+This project was developed for educational and portfolio purposes using the AI Student Impact Dataset.
+
+The findings represent analytical observations from the available dataset and should not be interpreted as causal evidence that Generative AI directly causes changes in academic performance or student well-being.

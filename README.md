@@ -8,6 +8,8 @@ Using the AI Student Impact Dataset, the analysis explores academic performance,
 
 The original dataset contains **50,000 student records**, with **49,994 records** retained for the final analysis after data cleaning and validation.
 
+**Project Duration:** June 2026
+
 ---
 
 ## Business Problem
